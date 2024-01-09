@@ -45,8 +45,24 @@ function AppLayout() {
     };
   }, []);
 
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div>
+    <div className={darkMode ? "dark-mode" : ""}>
+      {/* slider wrapper */}
+      <div className="absolute right-0 top-12">
+        <input type="checkbox" id="darkModeToggle" onChange={toggleDarkMode} />
+        <label
+          htmlFor="darkModeToggle"
+          className="dark-mode-toggle text-black ml-2"
+        >
+          Dark mode
+        </label>
+      </div>
       <header>
         <nav className={`m-auto w-[100%] z-[999] ${scrollDown ? "fixed" : ""}`}>
           <ul className="bg-primary-purple  p-3 mt-0  mx-auto flex gap-4 text-off-white justify-center shadow-md ">

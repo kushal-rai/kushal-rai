@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #f4f4f4;
+.dark-mode {
+  filter: invert(1);
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .active {
