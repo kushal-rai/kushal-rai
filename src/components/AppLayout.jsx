@@ -9,6 +9,7 @@ import Portfolio from "../pages/Portfolio";
 import Landing from "../pages/Landing";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
+import { Switch } from "./ui/switch";
 
 function AppLayout() {
   const [scrollDown, setScrollDown] = useState(true);
@@ -47,15 +48,15 @@ function AppLayout() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <div className={darkMode ? "dark-mode" : ""}>
       {/* slider wrapper */}
-      <div className="absolute right-0 top-12">
-        <input type="checkbox" id="darkModeToggle" onChange={toggleDarkMode} />
+      <div className="absolute right-0 top-14 text-center flex ">
+        <Switch
+          className=""
+          checked={darkMode}
+          onCheckedChange={() => setDarkMode(!darkMode)}
+        />
         <label
           htmlFor="darkModeToggle"
           className="dark-mode-toggle text-black ml-2"

@@ -14,8 +14,9 @@ function contact() {
           <span className="absolute -bottom-5 left-[47%] transform -translate-x-1/2 block w-20 h-2 bg-primary-yellow"></span>
         </h1>
       </div>
-      <section className="max-w-md w-full mx-auto bg-[#f4f4f4] rounded-lg shadow-md">
-        <form className=" py-4 px-5 ">
+      <section className="max-w-md w-full mx-auto bg-[#f4f4f4] rounded-lg shadow-md flex gap-2">
+        {/* contact form */}
+        <form className=" py-4 px-5 z-10">
           <div className="mb-4">
             <label htmlFor="name" className="block mb-1">
               Name:
@@ -71,6 +72,14 @@ function contact() {
             Submit
           </button>
         </form>
+
+        {/* Image wrapper */}
+        <div>
+          <figure className="relative ">
+            <img src="src/assets/image/kush.jpg" alt="Kushal" />
+          </figure>
+          <div className="absolute inset-0 h-96 m-auto z-0 transform -skew-x-12 -translate-x-1/2 border-r-4 border-blue-500"></div>
+        </div>
       </section>
     </div>
   );

@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 function Landing() {
   return (
     <div className="bg-white">
-      <div className="h-screen flex flex-col lg:flex-row items-center justify-center text-center w-full  md:w-2/3 m-auto bg-[#F4F4F4]">
+      <div className="h-screen flex flex-col lg:flex-row items-center justify-center text-center w-full  md:w-2/3 m-auto ">
         <div className="mt-24 sm:mt-40 lg:mt-0 p-5 w-full lg:w-1/2">
           {" "}
           {/* Added width setting */}

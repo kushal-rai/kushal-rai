@@ -30,12 +30,11 @@ function About() {
       </div>
 
       <section className="max-w-full  md:w-3/4 px-3 flex flex-col lg:flex-row gap-10">
-        <p className="text-center lg:w-2/4 lg:mt-12">
-          Hey, I&apos;m Kushal, a dedicated web developer from Melbourne. I
-          blend creativity with code to craft sleek, user-friendly websites.
-          Always learning and exploring new technologies, outside of coding,
-          you&apos;ll find me exploring nature&apos;s wonders or embracing a
-          fitness challenge.
+        <p className="text-center lg:w-2/4 lg:mt-16">
+          I&apos;m a dedicated web developer from Melbourne. I blend creativity
+          with code to craft sleek, user-friendly websites. Always learning and
+          exploring new technologies, outside of coding, you&apos;ll find me
+          exploring nature&apos;s wonders or embracing a fitness challenge.
           <br />
           <em>Let&apos;s build something awesome together!</em>
         </p>
