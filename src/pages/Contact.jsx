@@ -24,7 +24,7 @@ function Contact() {
         <div className="md:-mr-1 w-[20rem] md:w-[400px] h-[400px] md:h-full">
           <img
             className="w-full h-full object-cover md:rounded-none rounded-b-lg md:rounded-r-lg"
-            src="src/assets/image/kush3.jpg"
+            src="/image/kush3.jpg"
             alt="Responsive Image"
           />
         </div>

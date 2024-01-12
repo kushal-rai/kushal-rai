@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className=" bg-off-white ">
       <div className="flex flex-row md:items-center p-5 md:justify-center md:gap-96 justify-between">
-        <div className="flex gap-6">
+        <div className="flex gap-2 md:gap-6">
           <Link to={"https://www.instagram.com/_kushalrai/"} target="_blank">
             <FontAwesomeIcon
               icon={faInstagramSquare}
