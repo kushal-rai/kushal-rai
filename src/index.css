@@ -5,3 +5,31 @@
 .dark-mode {
   filter: invert(1);
 }
+
+.spacer {
+  margin-top: -80px;
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave {
+  background-image: url("./assets/image/wave.svg");
+}
+
+@media (max-width: 1200px) {
+  .spacer {
+    aspect-ratio: 800/350;
+  }
+}
+@media (max-width: 767px) {
+  .spacer {
+    margin-top: -80px;
+    aspect-ratio: 400/350;
+  }
+  .wave {
+    background-image: url("./assets/image/wave2.svg");
+  }
+}

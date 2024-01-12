@@ -10,13 +10,8 @@ const projects = [
   },
   {
     id: 2,
-    url: "https://kushal-rai.github.io/another-note-app/",
-    img: "src/assets/image/noteapp.jpg",
-  },
-  {
-    id: 3,
-    url: "https://nimanandash.com/",
-    img: "src/assets/image/nimanandsh.jpg",
+    url: "https://kushal-rai.github.io/usepopcorn/",
+    img: "src/assets/image/usepopcorn.jpg",
   },
 ];
 function Portfolio() {
@@ -26,14 +21,14 @@ function Portfolio() {
         <Lottie animationData={animationData} loop={true} />
       </div>
 
-      <div className="mb-16 ">
+      <div className="mb-2 ">
         <h1 className="text-5xl font-bold mb-5 relative">
           Portfolio
           <span className="absolute -bottom-5 left-[47%] transform -translate-x-1/2 block w-20 h-2 bg-primary-purple"></span>
         </h1>
       </div>
       <section>
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
+        <ul className="grid grid-cols-2 gap-5 md:gap-10 m-auto">
           {projects.map((project) => (
             <Project project={project} key={project.id} />
           ))}

@@ -51,7 +51,7 @@ function AppLayout() {
   return (
     <div className={darkMode ? "dark-mode" : ""}>
       {/* slider wrapper */}
-      <div className="absolute right-0 top-14 text-center flex ">
+      {/* <div className="absolute right-0 top-14 text-center flex ">
         <Switch
           className=""
           checked={darkMode}
@@ -63,7 +63,7 @@ function AppLayout() {
         >
           Dark mode
         </label>
-      </div>
+      </div> */}
       <header>
         <nav className={`m-auto w-[100%] z-[999] ${scrollDown ? "fixed" : ""}`}>
           <ul className="bg-primary-purple  p-3 mt-0  mx-auto flex gap-4 text-off-white justify-center shadow-md ">
@@ -93,9 +93,12 @@ function AppLayout() {
       <Element name="About">
         <About />
       </Element>
+
       <Element name="Portfolio">
         <Portfolio />
       </Element>
+      <div className="spacer wave"></div>
+
       <Element name="Contact">
         <Contact />
       </Element>
@@ -104,7 +107,7 @@ function AppLayout() {
       {/* Button to scroll to top */}
 
       <button
-        className="text-lg bottom-10 z-10 right-4 p-2 rounded-full bg-slate-100 bg-opacity-60  fixed"
+        className="text-lg bottom-20 z-10 right-4 p-2 rounded-full bg-slate-100 bg-opacity-60  fixed"
         onClick={scrollToTop}
       >
         🔝

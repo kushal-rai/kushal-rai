@@ -1,88 +1,36 @@
 import Lottie from "lottie-react";
 import animationData from "../assets/image/hire.json";
+import ContactForm from "./ContactForm";
 
-function contact() {
+function Contact() {
   return (
-    <div className="bg-primary-purple flex flex-col justify-center items-center  h-[100vh] relative">
+    <div className="bg-primary-purple flex flex-col justify-center items-center py-8 -mt-10 relative">
       {/* animation wrapper */}
-      <div className="w-60 absolute right-20 opacity-80 bottom-10">
+      {/* <div className="md:w-40 w-20 absolute right-16 md:right-56 opacity-80  bottom-7 md:botton-20 ">
         <Lottie animationData={animationData} loop={true} />
-      </div>
+      </div> */}
       <div className="mb-16">
         <h1 className="text-5xl font-bold relative">
           Contact
           <span className="absolute -bottom-5 left-[47%] transform -translate-x-1/2 block w-20 h-2 bg-primary-yellow"></span>
         </h1>
       </div>
-      <section className="max-w-md w-full mx-auto bg-[#f4f4f4] rounded-lg shadow-md flex gap-2">
+      <section className="bg-primary-yellow rounded-lg ga shadow-md flex flex-col md:flex-row md:gap-0 justify-between items-center">
         {/* contact form */}
-        <form className=" py-4 px-5 z-10">
-          <div className="mb-4">
-            <label htmlFor="name" className="block mb-1">
-              Name:
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block mb-1">
-              Email:
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-              placeholder="Enter your email"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="phone" className="block mb-1">
-              Phone:
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-              placeholder="Enter your phone number"
-            />
-          </div>
-          <div className="mb-6">
-            <label htmlFor="message" className="block mb-1">
-              Message:
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-              placeholder="Your message"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
-          >
-            Submit
-          </button>
-        </form>
-
+        <div className="p-8 md:w-[380px]">
+          <ContactForm />
+        </div>
         {/* Image wrapper */}
-        <div>
-          <figure className="relative ">
-            <img src="src/assets/image/kush.jpg" alt="Kushal" />
-          </figure>
-          <div className="absolute inset-0 h-96 m-auto z-0 transform -skew-x-12 -translate-x-1/2 border-r-4 border-blue-500"></div>
+        <div className="md:-mr-1 w-[20rem] md:w-[400px] h-[400px] md:h-full">
+          <img
+            className="w-full h-full object-cover md:rounded-none rounded-b-lg md:rounded-r-lg"
+            src="src/assets/image/kush3.jpg"
+            alt="Responsive Image"
+          />
         </div>
       </section>
     </div>
   );
 }
 
-export default contact;
+export default Contact;
