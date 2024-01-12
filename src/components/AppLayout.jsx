@@ -9,7 +9,6 @@ import Portfolio from "../pages/Portfolio";
 import Landing from "../pages/Landing";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
-import { Switch } from "./ui/switch";
 
 function AppLayout() {
   const [scrollDown, setScrollDown] = useState(true);
