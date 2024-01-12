@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
@@ -23,7 +24,7 @@ function Project({ project }) {
         />
       </figure>
       <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <Link to={project.url} className="text-center">
+        <Link to={project.url} className="text-center" target="_blank">
           <Button className="hover:bg-primary-purple">Visit Site</Button>
         </Link>
       </div>
