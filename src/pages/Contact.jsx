@@ -25,7 +25,7 @@ function Contact() {
           <img
             className="w-full h-full object-cover md:rounded-none rounded-b-lg md:rounded-r-lg"
             src="./image/kush3.jpg"
-            alt="Responsive Image"
+            alt="Kushal Rai"
           />
         </div>
       </section>
