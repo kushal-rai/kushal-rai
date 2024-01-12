@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/kushal-rai">
       <Routes>
         <Route path="/" element={<AppLayout />} />
         <Route path="about" element={<About />} />
