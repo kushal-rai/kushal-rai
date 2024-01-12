@@ -6,12 +6,12 @@ const projects = [
   {
     id: 1,
     url: "https://kushal-rai.github.io/react-pizza/",
-    img: "/image/reactPizza.jpg",
+    img: "./image/reactPizza.jpg",
   },
   {
     id: 2,
     url: "https://kushal-rai.github.io/usepopcorn/",
-    img: "/image/usepopcorn.jpg",
+    img: "./image/usepopcorn.jpg",
   },
 ];
 function Portfolio() {
